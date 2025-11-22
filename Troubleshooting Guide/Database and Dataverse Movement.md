@@ -20,7 +20,7 @@ Suppose that `FnO environment A` and `Power Platform environment B` are the pair
 | |
 
 > [!IMPORTANT] 
-> If the target environment (`A` and `B’`) of your movement operation are Production environments, no matter which action you want to take, please contact inventvisibilitysupp@microsoft.com with your detailed scenario for further support.
+> If the target environment (`A` and `B’`) of your movement operation are Production environments, no matter which action you want to take, please raise a support case with your detailed scenario and ask support engineer to route to PG team for further support.
 
 ## Only copy FnO Database A to Database A’
 
@@ -127,7 +127,7 @@ Toubleshooting list:
 - [I don’t have the endpoint of target environment when refreshing the environment id in IV configuration.](#i-dont-have-the-endpoint-of-target-environment-when-refreshing-the-environment-id-in-iv-configuration)
 
 > [!NOTE] 
-> **For further support, please contact us via InventVisibilitySupp@microsoft.com.**
+> **For further assistance, please raise a support case.**
 
 ### How to check the execution result of delete all inventory job?
 
@@ -155,11 +155,13 @@ Without installation, the target environment is not registered to IV service, so
 
 ### I don’t have the endpoint of target environment when refreshing the environment id in IV configuration.
 
+In most cases, your target environment will continue to use the same endpoint as what it used before the Dataverse movement operation. If you don't remeber what it was, try the below steps.
+
 **Disable the auto-redirection of your client** and send the `updateEnvIdInConfig` request with the endpoint of your source environment.
 
 - If the response status is 200, move on with the remaining steps.
 
-- If the response status is 401, check whether you have disabled the auto-redirection of your client. If yes, contact us via InventVisibilitySupp@microsoft.com. Include the environment ID of your target environment in the email.
+- If the response status is 500 or 401, raise a support case to request assistance. Attach the environment Id of your target environment and mention that you need the IV endpoint after Dataverse movement operation.
 
 - If the response status is 308 (Permanent Redirect), the endpoint of your target environment can be found in the `Location` field of the response headers. Note that query parameter (oldEnvironmentId) may not be captured in this field. Next, re-send the request with the endpoint of your target environment and the correct query parameter. After receiving a 200 response status, you can move on with the remaining steps.
 ![Handle 308 redirect](media/handle-redirect.png)

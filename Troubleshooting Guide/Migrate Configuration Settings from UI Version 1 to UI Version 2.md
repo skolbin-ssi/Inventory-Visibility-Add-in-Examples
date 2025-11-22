@@ -22,7 +22,7 @@ This is a supplementary operating guide for [Migrate configuration settings from
 ## Troubleshooting
 
 > [!NOTE] 
-> **For further support, please contact us via InventVisibilitySupp@microsoft.com.**
+> **For further assistance, please raise a support case.**
 
 ### What is the relationship between UI version and entity version?
 

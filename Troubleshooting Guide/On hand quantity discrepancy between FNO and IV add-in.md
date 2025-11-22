@@ -42,7 +42,7 @@ If your environment has incorrect quantity for all fields, please confirm whethe
 Here are two cases:
 
 - If you environment is Sandbox environment, we would suggest you that you can follow the below guide to resync FNO related data, it will make sure that you get latest FNO on hand result in IV side.
-- If you enviornment is PROD environment, please contact Inventory Visibility product team at ```inventvisibilitysupp@microsoft.com``` before you take any actions on your PROD environment, we will check your data and configuration to help you fix the issue and prevent it happen again.
+- If you enviornment is PROD environment, please raise a support case and ask support engineer to route to PG team before you take any action on your PROD environment. We will check your data and configuration and help you fix the issue.
 
 ### Guide to resync FNO related data
 
