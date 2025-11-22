@@ -1,7 +1,7 @@
 # Troubleshooting Guide Overview
 
 For this section, we list some known issues that users may face when using IV Add-in.
-If you cannot find corresponding workaround for your issue, please feel free to contact Inventory Visibility product team at ```inventvisibilitysupp@microsoft.com```. In the email, please attach your issue details and FNO environment Id. Our team will help check your data and guide you to fix the issue. Hope you have a good experience on using inventory visibility.
+If you cannot find corresponding workaround for your issue, please raise a support case to request assistance. Hope you have a good experience on using inventory visibility.
 
 Below are the workarounds for some known issues and some operating guides:
 
